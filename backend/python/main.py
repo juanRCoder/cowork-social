@@ -7,6 +7,8 @@ app = FastAPI(
     version="1.0.0"
 )
 
+print("CAMBIO 1")
+
 # CORS
 app.add_middleware(
     CORSMiddleware,

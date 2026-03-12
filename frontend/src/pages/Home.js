@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Home.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 /**
  * Página de inicio / Landing page
@@ -15,6 +15,7 @@ const Home = () => {
             <h1>Bienvenido a CoWork Social</h1>
             <p className="hero-subtitle">
               La red social para profesionales que colaboran y construyen juntos
+              CAMBIO 1
             </p>
             <div className="hero-actions">
               <Link to="/register" className="btn btn-primary">
@@ -37,19 +38,19 @@ const Home = () => {
               <h3>Perfiles Profesionales</h3>
               <p>Crea tu perfil y muestra tus habilidades al mundo</p>
             </div>
-            
+
             <div className="feature-card card">
               <div className="feature-icon">📝</div>
               <h3>Publicaciones</h3>
               <p>Comparte tus proyectos, ideas y conocimientos</p>
             </div>
-            
+
             <div className="feature-card card">
               <div className="feature-icon">💬</div>
               <h3>Colaboración</h3>
               <p>Comenta, reacciona y conecta con otros profesionales</p>
             </div>
-            
+
             <div className="feature-card card">
               <div className="feature-icon">📊</div>
               <h3>Analytics</h3>

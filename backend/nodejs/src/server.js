@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const swaggerUi = require('swagger-ui-express');
-const swaggerJsdoc = require('swagger-jsdoc');
+const express = require("express");
+const cors = require("cors");
+const swaggerUi = require("swagger-ui-express");
+const swaggerJsdoc = require("swagger-jsdoc");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -11,13 +11,14 @@ app.use(cors());
 app.use(express.json());
 
 // Swagger configuration
+console.log("CAMBIO 1");
 const swaggerOptions = {
   definition: {
-    openapi: '3.0.0',
+    openapi: "3.0.0",
     info: {
-      title: 'CoWork Social API',
-      version: '1.0.0',
-      description: 'API REST para CoWork Social - Datos Mock',
+      title: "CoWork Social API",
+      version: "1.0.0",
+      description: "API REST para CoWork Social - Datos Mock",
     },
     servers: [
       {
@@ -25,11 +26,11 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ['./src/routes/*.js'],
+  apis: ["./src/routes/*.js"],
 };
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Routes
 // TODO: Uncomment based on your task
@@ -40,14 +41,14 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // app.use('/api/posts', postsRouter);                 // BE-02
 
 // Home route
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   res.json({
-    message: 'CoWork Social API',
-    documentation: '/api-docs',
+    message: "CoWork Social API",
+    documentation: "/api-docs",
     endpoints: {
-      users: '/api/users',    // BE-01
-      posts: '/api/posts'     // BE-02
-    }
+      users: "/api/users", // BE-01
+      posts: "/api/posts", // BE-02
+    },
   });
 });
 
