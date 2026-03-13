@@ -14,7 +14,6 @@ import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
 function App() {
-  console.log("DEPLOY EN VERCEL");
   return (
     <Router>
       <div className="App">
