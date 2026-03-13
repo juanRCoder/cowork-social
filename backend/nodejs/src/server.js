@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Health check
-app.use("/health", healthRoutes);
+app.use("/api/health", healthRoutes);
 
 // Swagger configuration
 const swaggerOptions = {
@@ -49,6 +49,7 @@ app.get("/", (req, res) => {
     message: "CoWork Social API",
     documentation: "/api-docs",
     endpoints: {
+      health: "/api/health",
       users: "/api/users", // BE-01
       posts: "/api/posts", // BE-02
     },

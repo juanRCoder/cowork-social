@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/health", (req, res) => {
+router.get("/", (req, res) => {
   res.json({
     status: "healthy",
     timestamp: new Date().toISOString(),
@@ -10,7 +10,7 @@ router.get("/health", (req, res) => {
   });
 });
 
-router.get("/health/detailed", (req, res) => {
+router.get("/detailed", (req, res) => {
   res.json({
     status: "healthy",
     timestamp: new Date().toISOString(),
