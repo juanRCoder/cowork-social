@@ -61,7 +61,7 @@ jobs:
           DEPLOY_HOOK: ${{ secrets.RENDER_NODE_DEPLOY_HOOK }}
         run: |
           if [ -n "$DEPLOY_HOOK" ]; then
-            curl -f -X POST $DEPLOY_HOOK
+            curl -f -X POST "$DEPLOY_HOOK"
           else
             echo "RENDER_NODE_DEPLOY_HOOK not set, skipping deploy"
           fi
@@ -96,7 +96,7 @@ jobs:
           DEPLOY_HOOK: ${{ secrets.RENDER_PYTHON_DEPLOY_HOOK }}
         run: |
           if [ -n "$DEPLOY_HOOK" ]; then
-            curl -f -X POST $DEPLOY_HOOK
+            curl -f -X POST "$DEPLOY_HOOK"
           else
             echo "RENDER_PYTHON_DEPLOY_HOOK not set, skipping deploy"
           fi
