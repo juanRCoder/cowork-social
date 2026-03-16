@@ -36,7 +36,7 @@ const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Routes
-// TODO: Uncomment based on your task
+// TODO: Uncomment based on your task.
 // const usersRouter = require('./routes/users');      // BE-01
 // const postsRouter = require('./routes/posts');      // BE-02
 
