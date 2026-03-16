@@ -60,6 +60,7 @@ Formato:
 ---
 
 ### Devops
+- **Juan Ramirez** - [@juanRCoder](https://github.com/juanRCoder) - DO-01, DO-02, DO-03
 
 
 ## Cómo Agregarte
