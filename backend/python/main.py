@@ -56,4 +56,4 @@ def detailed_health():
     }
 
 # TODO: Implementar endpoints para BE-03
-# Ver README.md para ejemplos y estructura de responses
+# Ver README.md para ejemplos y estructura de responses.

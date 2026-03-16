@@ -4,7 +4,7 @@ import "./Home.css";
 
 /**
  * Página de inicio / Landing page
- * Muestra información sobre la plataforma y llama a acción
+ * Muestra información sobre la plataforma y llama a acción.
  */
 const Home = () => {
   return (
