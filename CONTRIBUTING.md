@@ -297,73 +297,11 @@ Ahora que tienes todo funcionando, **trabaja en todas las tareas de tu rol segú
 
 ---
 
-### 6️⃣ Sube tu Código y Abre Pull Request
+### 6️⃣ Deploy y Publica en LinkedIn
 
 Cuando hayas completado las tareas definidas para tu rol:
 
-```bash
-# 1. Verifica tus cambios
-git status
-
-# 2. Asegúrate de tener todo commiteado
-git add .
-git commit -m "feat: completa roadmap de [tu-rol]"
-
-# 3. Sube tu rama a GitHub
-git push origin tu-nombre-rol
-```
-
-**Abre tu Pull Request:**
-
-1. Ve a tu fork en GitHub: `github.com/TU-USUARIO/cowork-social`
-2. Verás un banner amarillo: **"Compare & pull request"** → Click
-3. **Título del PR:** `[ROL] Completo roadmap - Tu Nombre`  
-   Ejemplo: `[Frontend] Completo roadmap FE-01 a FE-09 - María González`
-
-4. **Descripción:** Incluye:
-   - ✅ Lista de tareas del roadmap completadas
-   - 📸 Screenshots o GIFs de tu trabajo
-   - 🔗 Link a tu deploy
-   - 🔗 Link a tu post de LinkedIn
-   - 📝 Breve explicación de lo que aprendiste
-
-**Ejemplo de descripción:**
-
-```markdown
-## Tareas Completadas
-
-✅ FE-01: Tema Oscuro/Claro
-✅ FE-02: Modal de Crear Post
-✅ FE-03: Buscador de Usuarios
-✅ ... (incluye todas las tareas de tu roadmap)
-
-## Deploy
-
-🔗 https://mi-cowork-social.vercel.app
-
-## Screenshots
-
-![Dark Mode](https://...)
-![Create Post](https://...)
-![Search](https://...)
-
-## LinkedIn Post
-
-🔗 https://linkedin.com/posts/...
-
-## Aprendí
-
-- Manejo de themes con CSS variables
-- Estado global con localStorage
-- Filtrado de arrays en React
-```
-
----
-
-### 7️⃣ Deploy y Publica en LinkedIn
-
-1. **GitHub**: Abre PR con screenshots y link a deploy
-2. **Deploy** tu trabajo:
+1. **Deploy** tu trabajo:
    - Frontend: [Vercel](https://vercel.com) / [Netlify](https://netlify.com)
    - Backend: [Render](https://render.com) / [Railway](https://railway.app)
    - Data: [Streamlit Cloud](https://streamlit.io/cloud)
